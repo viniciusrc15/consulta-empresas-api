@@ -1,0 +1,18 @@
+<div>
+  <ul class="nav nav-pills">
+    <li role="presentation"><a routerLink="/dashboard">Dashboard</a></li>
+  </ul>
+</div>
+<br/>
+<p id="aviso">*Clique nas empresas para ver mais detalhes.</p>
+<a href="#" class="list-group-item disabled">
+    Empresas
+</a>
+<ul class="list list-group lista">
+  <li *ngFor="let emp of empresas " (click)="emSelecao(emp)">
+    <a class="list-group-item" data-toggle="modal" data-target="#myModal">{{emp.enterprise_name}} </a>
+  </li>
+</ul>
+<div *ngIf="empresaSelecionada" class="col-md-12">
+  <empresa-detail [empresa]="empresaSelecionada"> </empresa-detail>
+</div>

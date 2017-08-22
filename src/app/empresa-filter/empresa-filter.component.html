@@ -1,0 +1,23 @@
+<div *ngIf="erroFiltro" class="alert alert-danger" role="alert"><span class="glyphicon glyphicon-remove"> </span> {{erroFiltro}}</div>
+<h1 class="bemvindo">Listagem de empresas por filtro </h1>
+<br/>
+<div class="row">
+  <div class="col-md-3 form-group">
+    <select class="form-control" id="exampleSelect1" [(ngModel)]="tipoSelecionado">
+    <option *ngFor="let tp of tiposEmpresas" [ngValue]="tp.id">{{tp.enterprise_type_name}}</option>
+    </select>
+  </div>
+  <div class="col-md-6">
+    <div class="input-group">
+      <span class="input-group-addon glyphicon glyphicon-edit" id="sizing-addon2"></span>
+      <input class="form-control" aria-describedby="sizing-addon2" [(ngModel)]="nome" type="text" name="nome" placeholder="Digite o nome da empresa">
+    </div>
+  </div>
+  <div class="col-md-3">
+    <button class="btn btn-success" (click)="filterEmpresas()">Filtrar</button>
+  </div>
+</div>
+
+<div *ngIf=exibeEmpresas>
+  <app-empresa-list [empresas]="empresas"> </app-empresa-list>
+</div>

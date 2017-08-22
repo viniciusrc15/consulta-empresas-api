@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+#login{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    margin-top: 50px;
+    background: #DCDCDC;
+	padding:10px;
+	box-shadow: 1px 1px 1px 1px #4a4a4a;
+}
+#formulario{
+    padding: 20px;
+}
+
+.trataInputPreto{
+    background: white;
+}
+.lista{
+    list-style: none;
+}
+.bemvindo{
+  font-family: Roboto, sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  color: #383743;
+  padding: 10px;
+}
+#homeTxt{
+    font-family: monospace;
+    font-size: large; 
+}
+#homeBemVindo{
+   font-family: monospace;
+    font-size: xx-large;  
+}
+.conteudo{
+    padding: 50px;
+}
+#aviso{
+    font-size: 10px;
+    font-weight: bold;
+    vertical-align: 
+	top; color:red; 
+	font-family: 'ABeeZee', sans-serif;
+}
+#imagem{
+    margin: 5px 50px 0px;
+}

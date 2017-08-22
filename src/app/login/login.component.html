@@ -1,0 +1,21 @@
+<div *ngIf="erroLogin" class="alert alert-danger" role="alert"><span class="glyphicon glyphicon-remove"> </span> {{erroLogin}}</div>
+<div id="login">
+    <img id="imagem" src="/assets/images/logo-home.png">
+    <form id="formulario">
+        <label>Nome</label>
+        <div class="input-group">
+            <div class="input-group">
+                <span class="glyphicon glyphicon-user input-group-addon" id="sizing-addon1"></span>
+                <input class="form-control trataInputPreto" aria-describedby="sizing-addon1" [(ngModel)]="nome" type="text" name="nome">
+            </div>
+            <br/>
+            <label>Senha</label>
+            <div class="input-group">
+                <span class="glyphicon glyphicon-lock input-group-addon" id="basic-addon1"></span>
+                <input class="form-control trataInputPreto" aria-describedby="sizing-addon1" [(ngModel)]="senha" type="password" name="senha">
+            </div>
+        </div>
+        <br/>
+        <button class="btn btn-success dropdown-toggle" (click)="logar()">Enviar</button>
+    </form>
+</div>

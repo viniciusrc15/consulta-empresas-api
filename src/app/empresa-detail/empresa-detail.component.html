@@ -1,0 +1,19 @@
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"><b>Nome:</b> {{empresa.enterprise_name}}</h4>
+      </div>
+      <div class="modal-body">
+        <p><b>Descrição:</b> {{empresa.description}}</p>
+        <p><b>Tipo:</b> {{empresa.enterprise_type.enterprise_type_name}}</p>
+        <p><b>Cidade:</b> {{empresa.city}}</p>
+        <p><b>País:</b> {{empresa.country}}</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
